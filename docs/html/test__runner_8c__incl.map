@@ -1,0 +1,9 @@
+<map id="tests/test_runner.c" name="tests/test_runner.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="124,5,267,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,116,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,33,96,74,94,70,172,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="141,79,250,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="198,31,198,65,193,65,193,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="274,79,341,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="215,28,279,69,276,73,212,33"/>
+</map>

@@ -1,7 +1,11 @@
-/* src/output/output.c */
 #include "output.h"
 #include <stdio.h>
 
+/**
+ * @brief Выводит матрицу в консоль.
+ *
+ * @param matrix Указатель на матрицу для вывода.
+ */
 void print_matrix_to_console(const Matrix* matrix) {
     if (!matrix) return;
     for (size_t i = 0; i < matrix->rows; ++i) {
@@ -12,6 +16,12 @@ void print_matrix_to_console(const Matrix* matrix) {
     printf("\n");
 }
 
+/**
+ * @brief Записывает матрицу в файл.
+ *
+ * @param matrix Указатель на матрицу для записи.
+ * @param filename Имя файла для записи.
+ */
 void write_matrix_to_file(const Matrix* matrix, const char* filename) {
     FILE* file = fopen(filename, "w");
     if (!file) {

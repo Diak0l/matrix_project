@@ -7,12 +7,11 @@ INC_DIR := include
 TEST_DIR := tests
 BUILD_DIR := build
 
-# Включите все .c файлы из подкаталогов, кроме main.c
+
 SRCS := $(filter-out $(SRC_DIR)/main.c, $(wildcard $(SRC_DIR)/matrix/*.c) $(wildcard $(SRC_DIR)/output/*.c) $(wildcard $(SRC_DIR)/*.c))
 INCS := $(wildcard $(INC_DIR)/*.h)
 OBJS := $(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(SRCS))
 
-# Включите все test .c файлы
 TEST_SRCS := $(wildcard $(TEST_DIR)/*.c)
 TEST_OBJS := $(patsubst $(TEST_DIR)/%.c,$(BUILD_DIR)/%.o,$(TEST_SRCS))
 
